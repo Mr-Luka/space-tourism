@@ -7,7 +7,43 @@
     <title>Space Tourism</title>
 </head>
 <body>
-    <div class="wrapper">
+    <section class="sign-up">
+        <div class="bg-video">
+            <div class="content">
+                <h1>Welcome to Space Tourism</h1>
+                <button class="btn" id="form-open-btn">Sign Up</button>
+            </div>
+            <video src="./pics&vid/home-page.mp4" autoplay loop muted></video>
+        </div>
+        <div class="sign-up-form">
+            <form>
+                <div class="input-wrap">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" required /> 
+                </div>
+                <div class="input-wrap">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" required />
+                </div>
+                <div class="age">
+                    <small>I am over 21 years of age</small>
+                    <div>
+                        <small>No</small>
+                        <div class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                        </div>
+                        <small>Yes</small>
+                    </div>
+                </div>
+                <button class="btm" type="submit">Sign Me Up!</button>
+            </form>
+            <button class="close">
+                <span class="material-symbol-outlined">Close</span>
+            </button>
+        </div>
+        </section>
+    <!-- <div class="wrapper">
         <div class="header">
             <h1>Universe Tour</h1>
             <div class="nav-bar">
@@ -29,6 +65,6 @@
                 <button class="explore">Explore</button>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
