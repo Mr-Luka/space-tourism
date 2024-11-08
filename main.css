@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: "Oxygen Mono", monospace;
     overflow-x: hidden;
     background: rgb(0, 0, 0);
     color: white;
@@ -292,6 +292,7 @@ label {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     display: flex;
     animation: fadeLeft 1700ms ease-in-out forwards;
+    border-top-left-radius: 15rem;
 }
 .nav-ul {
     position: relative;
@@ -315,5 +316,90 @@ li a {
 li a:hover {
     color: #b6d010;
 }
+
+.front-page {
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.intro-text {
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 5%;
+    width: 40%;
+    text-align: center;
+}
+.intro-text h2{
+    font-size: 3rem;
+}
+#space {
+    font-size: 10rem;
+    animation: fadeDown 1700ms ease-in-out forwards;
+    color: rgba(255, 255, 255, 0.139);
+    font-family: "Orbitron", sans-serif;
+    margin: 5rem 0 7rem 0; 
+}
+#space p {
+    outline: 2px solid white;
+}
+
+.intro-text p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    
+}
+
+.explore-div {
+    position: absolute;
+    top: 85%;
+    right: 20%;
+    z-index: 2;
+    padding: 4rem 2rem 4rem 2rem;
+    background-color: rgba(255, 255, 255, 0.135);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    text-align: center;
+}
+
+#explore-btn{
+    position: relative;
+    z-index: 3;
+    background-color: none;
+    color: rgba(255, 255, 255, 0.395);
+    font-weight: 800;
+    font-size: 3rem;
+    border-radius: 50%;
+}
+
+.cursor {
+    margin-top: 1.3rem;
+    width: 14em;
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+
+
 
 
