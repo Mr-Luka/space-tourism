@@ -264,6 +264,17 @@ label {
     }
 }
 
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-120px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
 /* After sign-up HOME PAGE */
 
 .header {
@@ -320,61 +331,69 @@ li a:hover {
 .front-page {
     position: absolute;
     z-index: 1;
-    top: 35%;
+    top: 45%;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 .intro-text {
     position: absolute;
     z-index: 2;
-    top: 30%;
+    top: 35%;
     left: 5%;
     width: 40%;
     text-align: center;
+    color: transparent
 }
 .intro-text h2{
-    font-size: 3rem;
+    font-size: 3.5rem;
+    color: white;
+    animation: fadeRight 1700ms ease-in-out forwards;
 }
 #space {
+    position: absolute;
+    z-index: 2;
     font-size: 10rem;
     animation: fadeDown 1700ms ease-in-out forwards;
-    color: rgba(255, 255, 255, 0.139);
-    font-family: "Orbitron", sans-serif;
-    margin: 5rem 0 7rem 0; 
+    color: rgba(255, 255, 255, 0.151);
+    font-family: "Orbitron", sans-serif; 
+    right: -155%;
+    top: 10%;
 }
-#space p {
-    outline: 2px solid white;
-}
+
 
 .intro-text p {
     font-size: 1.3rem;
-    margin-top: 1rem;
-    
+    margin-top: 20rem;
 }
+
 
 .explore-div {
     position: absolute;
-    top: 85%;
-    right: 20%;
+    margin-top: 45rem;
+    right: 5%;
     z-index: 2;
-    padding: 4rem 2rem 4rem 2rem;
-    background-color: rgba(255, 255, 255, 0.135);
-    backdrop-filter: blur(5px);
     border-radius: 50%;
-    text-align: center;
+    padding: 2rem
 }
 
 #explore-btn{
     position: relative;
     z-index: 3;
     background-color: none;
-    color: rgba(255, 255, 255, 0.395);
+    color: rgba(255, 255, 255, 0.108);
     font-weight: 800;
     font-size: 3rem;
-    border-radius: 50%;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2500ms;
 }
+#explore-btn:hover {
+    color: rgba(193, 253, 14, 0.39);
+    cursor: pointer;
+    scale: 1.2;
+}
+
 
 .cursor {
     margin-top: 1.3rem;
@@ -382,7 +401,8 @@ li a:hover {
     font-size: 30px;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    transform: translateY(-50%);  
+    color: white;  
 }
 /* Animation */
 .typewriter-animation {
@@ -401,5 +421,18 @@ li a:hover {
 
 
 
+  @keyframes reveal {
+    80%{
+      letter-spacing: 10px;
+    }
+    100% {
+      background-size: 300% 400%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 2px rgba(6, 214, 255, 0.819);
+    }
+  }
 
 
