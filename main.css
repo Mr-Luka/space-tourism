@@ -242,6 +242,28 @@ label {
     }
 }
 
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(120px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes fadeDown {
+     0% {
+        opacity: 0;
+        transform: translateY(-150px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
 /* After sign-up HOME PAGE */
 
 .header {
@@ -253,6 +275,9 @@ label {
     align-items: center;
     top: 1rem;
     left: 2rem;
+}
+.header h1 {
+    animation: fadeDown 1700ms ease-in-out forwards;
 }
 
 .nav-bar {
@@ -266,6 +291,7 @@ label {
     border-radius: 10px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     display: flex;
+    animation: fadeLeft 1700ms ease-in-out forwards;
 }
 .nav-ul {
     position: relative;
