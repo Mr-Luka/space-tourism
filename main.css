@@ -1,8 +1,11 @@
 body {
     font-family: sans-serif;
     overflow-x: hidden;
-    background: #111;
+    background: rgb(0, 0, 0);
     color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 * {
@@ -19,7 +22,13 @@ body {
     color: #fff;
     transition: 0.4s ease-in-out;
 }
+.hidden {
+    display: none;
+}
 
+.sign-up-form.hidden {
+    display: none;
+}
 .form-show {
     width: 100%;
     left: 0;
@@ -31,11 +40,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2em;
+     width: 100%;
 }
 .bg-video {
     overflow: hidden;
     position: relative;
     transition: 0.3s;
+    min-height: 100vh;
 }
 
 .bg-video video {
@@ -165,7 +176,7 @@ label {
 }
 
 .switch input:checked + .slider {
-    background: #ff5e3a;
+    background: #3affca;
 }
 
 .switch input:checked + .slider:before {
@@ -173,4 +184,22 @@ label {
 }
 .btn {
     margin: 2em auto;
+    display: block;
+    padding: 0.5em 2em;
+    border-radius: 3em;
+    border: 2px #fff solid;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: rgba(103, 227, 182, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+    color: #ccc;
 }
