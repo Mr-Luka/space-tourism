@@ -39,21 +39,24 @@ body {
 }
 
 .bg-video,
-.sign-up-form {
+.sign-up-form,
+.video-home {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2em;
     width: 100%;
 }
-.bg-video {
+.bg-video,
+.video-home {
     overflow: hidden;
     position: relative;
     transition: 0.3s;
     min-height: 100vh;
 }
 
-.bg-video video {
+.bg-video video,
+.video-home video {
     position: absolute;
     top: 0;
     left: 50%;
@@ -238,3 +241,53 @@ label {
         transform: translateY(0)
     }
 }
+
+/* After sign-up HOME PAGE */
+
+.header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    top: 1rem;
+    left: 2rem;
+}
+
+.nav-bar {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.073);
+    right: 0;
+    backdrop-filter: blur(1px);
+    padding: 2rem 15em 2rem 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.061);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+.nav-ul {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li {
+    list-style: none;
+    padding-left: 5rem;
+    color: white;
+}
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    filter: none;
+}
+
+li a:hover {
+    color: #b6d010;
+}
+
+
