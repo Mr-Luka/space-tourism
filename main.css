@@ -14,6 +14,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Sign-up Form and Layout Adjustments */
 .signup {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -359,7 +360,7 @@ li a:hover {
     color: rgba(255, 255, 255, 0.151);
     font-family: "Orbitron", sans-serif; 
     right: -155%;
-    top: 10%;
+    top: 0%;
 }
 
 
@@ -371,11 +372,12 @@ li a:hover {
 
 .explore-div {
     position: absolute;
-    margin-top: 45rem;
-    right: 5%;
+    margin-top: 53rem;
+    right: 7%;
     z-index: 2;
     border-radius: 50%;
-    padding: 2rem
+    padding: 2rem;
+    backdrop-filter: blur(5px);
 }
 
 #explore-btn{
@@ -436,3 +438,141 @@ li a:hover {
   }
 
 
+/* Media Query for Tablets (768px to 1024px) */
+@media screen and (max-width: 1314px) {
+    .signup {
+        grid-template-columns: 1fr;
+    }
+
+    .sign-up-form {
+        left: 5%;
+        max-width: 90%;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .nav-bar {
+        padding: 1rem 5rem 1rem 1rem;
+    }
+
+    .nav-ul li {
+        padding-left: 2rem;
+    }
+
+    .intro-text h2 {
+        font-size: 2.5rem;
+        text-align: center;
+
+    }
+
+      .intro-text {
+        width: 100%;
+    }
+
+    .explore-div {
+        margin-top: 25rem;
+        margin-right: 15rem;
+    }
+    .front-page {
+        text-align: center;
+    }
+}
+
+/* Media Query for Mobile (767px and below) */
+@media screen and (max-width: 767px) {
+    /* Adjust font sizes and layout for smaller screens */
+    .sign-up-form {
+        top: 20%;
+        left: 5%;
+        max-width: 90%;
+    }
+
+    .header {
+        left: 1rem;
+        top: 0.5rem;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-bar {
+        padding: 0.5rem 2rem 0.5rem 1rem;
+    }
+
+    .nav-ul li {
+        padding-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .intro-text h2 {
+        font-size: 4rem;
+        width: 90%;
+        left: 0;
+        margin-top: -10rem;
+    }
+
+
+    .intro-text p {
+        font-size: 1.4rem;
+        margin-top: 28rem;
+    }
+
+    .explore-div {
+        margin-top: 30rem;
+        padding: 1rem;
+        left: 45%;
+
+    }
+
+    #explore-btn {
+        font-size: 2rem;
+        right: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    #space {
+        font-size: 8rem;
+        right: 4rem;
+        margin-top: 9rem;
+    }
+}
+
+/* Adjustments for even smaller mobile screens (max-width 480px) */
+@media screen and (max-width: 480px) {
+    .signup {
+        grid-template-columns: 1fr;
+    }
+
+    .sign-up-form {
+        max-width: 95%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .header h1 {
+        font-size: 1.2rem;
+    }
+
+    .intro-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro-text p {
+        font-size: 0.9rem;
+    }
+
+    .explore-div {
+        margin-top: 15rem;
+    }
+
+    #explore-btn {
+        font-size: 1.5rem;
+    }
+
+    #space {
+        font-size: 4rem;
+    }
+}
