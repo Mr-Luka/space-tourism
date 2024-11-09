@@ -276,6 +276,17 @@ label {
     }
 }
 
+@keyframes fadeUp {
+     0% {
+        opacity: 0;
+        transform: translateY(150px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
 /* After sign-up HOME PAGE */
 
 .header {
@@ -497,8 +508,11 @@ li a:hover {
 }
 #destination span{
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     font-size: 18rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     right: 0%;
     font-family: "Poiret One", sans-serif;
     font-weight: 400;
@@ -524,7 +538,7 @@ li a:hover {
     font-family: "Poiret One", sans-serif;
     font-weight: 600;
     font-style: normal;
-    animation: fadeUp 5000ms ease-in-out forwards;
+    animation: fadeUp 10000ms ease-in-out forwards;
 }
 
 
