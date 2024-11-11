@@ -512,7 +512,7 @@ li a:hover {
     width: 40%;
     left: 5%;
     margin-top: 82%;
-    animation: fadeUp 1000ms ease-in-out forwards;
+    animation: fadeLeft 1000ms ease-in-out forwards;
 }
 
 #destination-promo-video4 {
@@ -522,7 +522,7 @@ li a:hover {
     left: 55%;
     margin-top: 60%;
     margin-bottom: 10rem;
-    animation: fadeUp 1000ms ease-in-out forwards;
+    animation: fadeRight 1000ms ease-in-out forwards;
 
 }
 
