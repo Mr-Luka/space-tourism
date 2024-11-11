@@ -6,3 +6,4 @@ signUpBtn.addEventListener('click', ()=> {
     welcomeContent.classList.add('hidden');
     signUpForm.classList.remove('hidden')
 })
+

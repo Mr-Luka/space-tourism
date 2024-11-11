@@ -464,6 +464,9 @@ li a:hover {
     transform: translateX(-50%);
     height: 100%;
     z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
  }
  section.destinations > div::before {
     content: '';
@@ -537,21 +540,21 @@ section.destinations > div:hover .article-link {
 section.destinations > div:nth-child(1):hover:before {
     background: linear-gradient(
         0deg,
-        rgba(20, 99, 142, 0.8),
+        rgba(20, 99, 142, 0.4),
         rgba(255, 187, 42, 0)
     );
 }
 section.destinations > div:nth-child(2):hover:before{
     background: linear-gradient(
         0deg,
-        rgba(30, 133, 18, 0.8),
+        rgba(30, 133, 18, 0.4),
         rgba(255, 187, 42, 0)
     );
 }
 section.destinations > div:nth-child(3):hover:before{
     background: linear-gradient(
         0deg,
-        rgba(194, 137, 31, 0.8),
+        rgba(255, 123, 0, 0.4),
         rgba(255, 187, 42, 0)
     );
 }
