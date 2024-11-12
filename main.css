@@ -781,8 +781,7 @@ section.destinations > div:hover p {
 }
 #destination-p,
 #destination-p1,
-#destination-p2,
-#destination-p3 {
+#destination-p2 {
     font-family: "Poiret One", sans-serif;
     font-size: 2rem;
     background-color: rgba(161, 161, 161, 0.083);
@@ -824,6 +823,8 @@ section.destinations > div:hover p {
     left: 55%;
 }
 #destination-p3 {
+    font-family: "Poiret One", sans-serif;
+    font-size: 2rem;
     position: absolute;
     z-index: 2;
     margin-top: 105rem;
@@ -892,11 +893,87 @@ section.destinations > div:hover p {
     .front-page {
         text-align: center;
     }
+
+    /* MARS */
+    #destination span{
+        font-size: 12rem;
+        transition: 0.2s;
+    }
+    #destination-p{
+        margin-top: 2rem;
+        transition: 0.2s;
+        font-size: 1.5rem;
+    }
+    #destination-p1{
+        margin-top: 73%;
+        transition: 0.2s;
+        font-size: 1.5rem;
+    }
+    #destination-p2{
+        margin-top: 70%;
+        transition: 0.2s;
+        font-size: 1.5rem;
+    }
+    #destination-p3{
+        margin-top: 140%;
+        left: 24%;
+    }
+    #destination-promo-video4{
+        width: 60%;
+        left: 21%;
+        margin-top: 72%;
+        transition: 0.2s;
+    }
+    #destination-promo-video3{
+        margin-top: 135%;
+        width: 60%;
+        left: 21%;
+        transition: 0.2s;
+    }
+    
+
 }
 
 @media screen and (max-width: 900px){
-    .destinations {
-        font-size: 14px;
+    /* MARS */
+    #destination span{
+        font-size: 8.5rem;
+        transition: 0.2s;
+    }
+    p#mars-catch {
+        font-size: 0.8rem;
+        margin-top: 17%;
+    }
+    #destination-p{
+        margin-top: 5%;
+        font-size: 1rem;
+    }
+    #destination-p1{
+        margin-top: 73%;
+        transition: 0.2s;
+        font-size: 1rem;
+    }
+    #destination-p2{
+        margin-top: 70%;
+        transition: 0.2s;
+        font-size: 1rem;
+    }
+    #destination-p3{
+        margin-top: 140%;
+        left: 23%;
+        font-size: 1.5rem;
+    }
+    #destination-promo-video4{
+        width: 60%;
+        left: 21%;
+        margin-top: 72%;
+        transition: 0.2s;
+    }
+    #destination-promo-video3{
+        margin-top: 135%;
+        width: 60%;
+        left: 21%;
+        transition: 0.2s;
     }
 }
 
@@ -961,6 +1038,57 @@ section.destinations > div:hover p {
 
     .destinations {
         grid-template-columns: 1fr;
+    }
+
+    /* MARS */
+
+    #destination span{
+        font-size: 7rem;
+        margin-top: -15%;
+        transition: 0.2s;
+    }
+    p#mars-catch {
+        font-size: 0.5rem;
+        margin-top: 3%;
+    }
+    #destination-p{
+        margin-top: 30%;
+        transition: 0.2s;
+        font-size: 1rem;
+        background-color: rgba(146, 100, 60, 0.377);
+    }
+    #destination-p1{
+        margin-top: 93%;
+        transition: 0.2s;
+        font-size: 1rem;
+    }
+    #destination-p2{
+        margin-top: 150%;
+        transition: 0.2s;
+        font-size: 1rem;
+        background-color: rgba(146, 100, 60, 0.669);
+    }
+    #destination-p3{
+        margin-top: 220%;
+        left: 22%;
+        font-size: 1.1rem;
+    }
+    #destination-promo-video,
+    #destination-promo-video2 {
+        margin-top: 40%;
+        width: 40%;
+}
+    #destination-promo-video4{
+        width: 60%;
+        left: 5%;
+        margin-top: 190%;
+        transition: 0.2s;
+    }
+    #destination-promo-video3{
+        margin-top: 135%;
+        width: 60%;
+        left: 35%;
+        transition: 0.2s;
     }
 }
 
